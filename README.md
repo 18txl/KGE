@@ -7,3 +7,13 @@ from NER to Embedding
   kg_generate.py:将同一个user阅读的新闻title中涉及到的entity相连，构成kg
   preoare_for_transx.py:为transx嵌入方法作准备
   embedding.py:生成嵌入
+  
+调用顺序：
+  python bert_cef_ner.py
+  python id.py
+  python kg_generate.py
+  python preoare_for_transx.py
+  cd Fast-TransX/transE/ (note: you can also choose other KGE methods)
+  g++ transE.cpp -o transE -pthread -O3 -march=native
+  ./transE
+  python embedding.py
