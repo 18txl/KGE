@@ -16,4 +16,5 @@ from NER to Embedding
   cd Fast-TransX/transE/ (note: you can also choose other KGE methods)
   g++ transE.cpp -o transE -pthread -O3 -march=native
   ./transE
+  cd ../..
   python embedding.py
